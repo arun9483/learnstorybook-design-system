@@ -21,7 +21,8 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "chromatic": "CHROMATIC_APP_CODE=t8uzf5evrt chromatic",
-    "build-storybook-docs": "build-storybook -s public --docs"
+    "build-storybook-docs": "build-storybook -s public --docs",
+    "release": "auto shipit"
   },
   "eslintConfig": {
     "extends": "react-app"
