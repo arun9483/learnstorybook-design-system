@@ -53,6 +53,11 @@ const BadgeWrapper = styled.div`
       color: ${color.dark};
       background: ${color.mediumlight};
     `};
+  ${(props) =>
+    !props.inline &&
+    css`
+      display: block;
+    `};
 `;
 
 /**

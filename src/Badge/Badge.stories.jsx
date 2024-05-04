@@ -4,6 +4,27 @@ import { Icon } from '../Icon/Icon';
 export default {
   title: 'Design System/Badge',
   component: Badge,
+  tags: ['autodocs'],
+  parameters: {
+    componentSubtitle: 'Display badge....',
+  },
+};
+
+export const BadgePlayground = {
+  args: {
+    icon: 'facehappy',
+    inline: true,
+    status: 'positive',
+  },
+  name: 'single badge',
+  render: (args) => (
+    <>
+      <Badge {...args}>
+        <Icon {...args} />
+        with icon
+      </Badge>
+    </>
+  ),
 };
 
 export const AllBadges = {
