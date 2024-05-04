@@ -22,6 +22,64 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@arun9483/learnstorybook-design-system-template@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@arun9483/learnstorybook-design-system-template@workspace:."
+  dependencies:
+    "@babel/core": ^7.22.5
+    "@babel/preset-env": ^7.21.5
+    "@babel/preset-react": ^7.18.6
+    "@babel/preset-typescript": ^7.21.5
+    "@chromatic-com/storybook": ^1.3.3
+    "@emotion/babel-plugin": ^11.11.0
+    "@emotion/react": ^11.11.1
+    "@emotion/styled": ^11.11.0
+    "@rollup/plugin-babel": ^6.0.3
+    "@rollup/plugin-commonjs": ^24.1.0
+    "@rollup/plugin-node-resolve": ^15.0.2
+    "@rollup/plugin-terser": ^0.4.3
+    "@storybook/addon-a11y": ^8.0.9
+    "@storybook/addon-coverage": ^1.0.1
+    "@storybook/addon-essentials": ^8.0.9
+    "@storybook/addon-interactions": ^8.0.9
+    "@storybook/addon-links": ^8.0.9
+    "@storybook/addon-onboarding": ^8.0.9
+    "@storybook/blocks": ^8.0.9
+    "@storybook/react": ^8.0.9
+    "@storybook/react-vite": ^8.0.9
+    "@storybook/test": ^8.0.9
+    "@storybook/test-runner": ^0.17.0
+    "@vitejs/plugin-react": ^3.1.0
+    auto: ^10.3.0
+    boxen: ^5.0.1
+    dedent: ^0.7.0
+    npm-run-all: ^4.1.5
+    playwright: ^1.43.1
+    polished: ^4.2.2
+    prettier: ^2.8.8
+    prop-types: ^15.8.1
+    react: ^18.0.0
+    react-dom: ^18.0.0
+    rimraf: ^3.0.2
+    rollup: ^3.25.0
+    rollup-plugin-dts: ^5.3.0
+    rollup-plugin-peer-deps-external: ^2.2.4
+    storybook: ^8.0.9
+    vite: ^4.1.4
+    zx: ^1.14.1
+  peerDependencies:
+    "@emotion/react": ^11.11.1
+    "@emotion/styled": ^11.11.0
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  languageName: unknown
+  linkType: soft
+
 "@auto-it/bot-list@npm:10.46.0":
   version: 10.46.0
   resolution: "@auto-it/bot-list@npm:10.46.0"
@@ -10812,64 +10870,6 @@ __metadata:
   checksum: 196e0d701100144fbfe078d604a477573413ebf38dfe8d543748605e6a7074978508a3bb9f8135acd319db4fa947eef78836497163617d15a22163c59a00996b
   languageName: node
   linkType: hard
-
-"learnstorybook-design-system-template@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "learnstorybook-design-system-template@workspace:."
-  dependencies:
-    "@babel/core": ^7.22.5
-    "@babel/preset-env": ^7.21.5
-    "@babel/preset-react": ^7.18.6
-    "@babel/preset-typescript": ^7.21.5
-    "@chromatic-com/storybook": ^1.3.3
-    "@emotion/babel-plugin": ^11.11.0
-    "@emotion/react": ^11.11.1
-    "@emotion/styled": ^11.11.0
-    "@rollup/plugin-babel": ^6.0.3
-    "@rollup/plugin-commonjs": ^24.1.0
-    "@rollup/plugin-node-resolve": ^15.0.2
-    "@rollup/plugin-terser": ^0.4.3
-    "@storybook/addon-a11y": ^8.0.9
-    "@storybook/addon-coverage": ^1.0.1
-    "@storybook/addon-essentials": ^8.0.9
-    "@storybook/addon-interactions": ^8.0.9
-    "@storybook/addon-links": ^8.0.9
-    "@storybook/addon-onboarding": ^8.0.9
-    "@storybook/blocks": ^8.0.9
-    "@storybook/react": ^8.0.9
-    "@storybook/react-vite": ^8.0.9
-    "@storybook/test": ^8.0.9
-    "@storybook/test-runner": ^0.17.0
-    "@vitejs/plugin-react": ^3.1.0
-    auto: ^10.3.0
-    boxen: ^5.0.1
-    dedent: ^0.7.0
-    npm-run-all: ^4.1.5
-    playwright: ^1.43.1
-    polished: ^4.2.2
-    prettier: ^2.8.8
-    prop-types: ^15.8.1
-    react: ^18.0.0
-    react-dom: ^18.0.0
-    rimraf: ^3.0.2
-    rollup: ^3.25.0
-    rollup-plugin-dts: ^5.3.0
-    rollup-plugin-peer-deps-external: ^2.2.4
-    storybook: ^8.0.9
-    vite: ^4.1.4
-    zx: ^1.14.1
-  peerDependencies:
-    "@emotion/react": ^11.11.1
-    "@emotion/styled": ^11.11.0
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-  peerDependenciesMeta:
-    react:
-      optional: true
-    react-dom:
-      optional: true
-  languageName: unknown
-  linkType: soft
 
 "leven@npm:^3.1.0":
   version: 3.1.0
