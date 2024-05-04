@@ -2,7 +2,10 @@
   "name": "@arun9483/learnstorybook-design-system-template",
   "description": "Storybook design systems tutorial",
   "version": "0.1.0",
-  "repository": "https://github.com/arun9483/learnstorybook-design-system.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arun9483/learnstorybook-design-system.git"
+  },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
