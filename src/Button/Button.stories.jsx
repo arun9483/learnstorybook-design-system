@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
+import { action } from '@storybook/addon-actions';
 
 import { Button } from './Button';
 import { Icon } from '../Icon/Icon';
 import { StoryLinkWrapper } from '../LinkWrapper';
-
 
 const CustomButton = styled.button`
   border: 1px solid green;
@@ -26,51 +26,78 @@ export const AllButtons = {
   name: 'all buttons',
   render: () => (
     <>
-      <Button appearance='primary'>Primary</Button>
-      <Button appearance='secondary'>Secondary</Button>
-      <Button appearance='tertiary'>Tertiary</Button>
-      <Button appearance='outline'>Outline</Button>
-      <Button appearance='primaryOutline'>Outline primary</Button>
-      <Button appearance='secondaryOutline'>Outline secondary</Button>
-      <Button appearance='primary' isDisabled>
+      <Button appearance='primary' onClick={action('clicked')}>
+        Primary
+      </Button>
+      <Button appearance='secondary' onClick={action('clicked')}>
+        Secondary
+      </Button>
+      <Button appearance='tertiary' onClick={action('clicked')}>
+        Tertiary
+      </Button>
+      <Button appearance='outline' onClick={action('clicked')}>
+        Outline
+      </Button>
+      <Button appearance='primaryOutline' onClick={action('clicked')}>
+        Outline primary
+      </Button>
+      <Button appearance='secondaryOutline' onClick={action('clicked')}>
+        Outline secondary
+      </Button>
+      <Button appearance='primary' isDisabled onClick={action('clicked')}>
         Disabled
       </Button>
       <br />
-      <Button appearance='primary' isLoading>
+      <Button appearance='primary' isLoading onClick={action('clicked')}>
         Primary
       </Button>
-      <Button appearance='secondary' isLoading>
+      <Button appearance='secondary' isLoading onClick={action('clicked')}>
         Secondary
       </Button>
-      <Button appearance='tertiary' isLoading>
+      <Button appearance='tertiary' isLoading onClick={action('clicked')}>
         Tertiary
       </Button>
-      <Button appearance='outline' isLoading>
+      <Button appearance='outline' isLoading onClick={action('clicked')}>
         Outline
       </Button>
-      <Button appearance='outline' isLoading loadingText='Custom...'>
+      <Button
+        appearance='outline'
+        isLoading
+        loadingText='Custom...'
+        onClick={action('clicked')}
+      >
         Outline
       </Button>
       <br />
-      <Button appearance='primary' size='small'>
+      <Button appearance='primary' size='small' onClick={action('clicked')}>
         Primary
       </Button>
-      <Button appearance='secondary' size='small'>
+      <Button appearance='secondary' size='small' onClick={action('clicked')}>
         Secondary
       </Button>
-      <Button appearance='tertiary' size='small'>
+      <Button appearance='tertiary' size='small' onClick={action('clicked')}>
         Tertiary
       </Button>
-      <Button appearance='outline' size='small'>
+      <Button appearance='outline' size='small' onClick={action('clicked')}>
         Outline
       </Button>
-      <Button appearance='primary' isDisabled size='small'>
+      <Button
+        appearance='primary'
+        isDisabled
+        size='small'
+        onClick={action('clicked')}
+      >
         Disabled
       </Button>
-      <Button appearance='outline' size='small' containsIcon>
+      <Button
+        appearance='outline'
+        size='small'
+        containsIcon
+        onClick={action('clicked')}
+      >
         <Icon icon='link' aria-label='Link' />
       </Button>
-      <Button appearance='outline' size='small'>
+      <Button appearance='outline' size='small' onClick={action('clicked')}>
         <Icon icon='link' />
         Link
       </Button>
@@ -84,38 +111,87 @@ export const buttonWrapper = {
     <div>
       <ButtonWrapper>Original Button Wrapper</ButtonWrapper>
       <br />
-      <Button ButtonWrapper={ButtonWrapper} appearance='primary'>
+      <Button
+        ButtonWrapper={ButtonWrapper}
+        appearance='primary'
+        onClick={action('clicked')}
+      >
         Primary
       </Button>
-      <Button ButtonWrapper={ButtonWrapper} appearance='secondary'>
+      <Button
+        ButtonWrapper={ButtonWrapper}
+        appearance='secondary'
+        onClick={action('clicked')}
+      >
         Secondary
       </Button>
-      <Button ButtonWrapper={ButtonWrapper} appearance='tertiary'>
+      <Button
+        ButtonWrapper={ButtonWrapper}
+        appearance='tertiary'
+        onClick={action('clicked')}
+      >
         Tertiary
       </Button>
-      <Button ButtonWrapper={ButtonWrapper} appearance='outline'>
+      <Button
+        ButtonWrapper={ButtonWrapper}
+        appearance='outline'
+        onClick={action('clicked')}
+      >
         Outline
       </Button>
-      <Button ButtonWrapper={ButtonWrapper} appearance='primaryOutline'>
+      <Button
+        ButtonWrapper={ButtonWrapper}
+        appearance='primaryOutline'
+        onClick={action('clicked')}
+      >
         Outline primary
       </Button>
-      <Button ButtonWrapper={ButtonWrapper} appearance='secondaryOutline'>
+      <Button
+        ButtonWrapper={ButtonWrapper}
+        appearance='secondaryOutline'
+        onClick={action('clicked')}
+      >
         Outline secondary
       </Button>
-      <Button ButtonWrapper={ButtonWrapper} appearance='primary' isDisabled>
+      <Button
+        ButtonWrapper={ButtonWrapper}
+        appearance='primary'
+        isDisabled
+        onClick={action('clicked')}
+      >
         Disabled
       </Button>
       <br />
-      <Button ButtonWrapper={ButtonWrapper} appearance='primary' isLoading>
+      <Button
+        ButtonWrapper={ButtonWrapper}
+        appearance='primary'
+        isLoading
+        onClick={action('clicked')}
+      >
         Primary
       </Button>
-      <Button ButtonWrapper={ButtonWrapper} appearance='secondary' isLoading>
+      <Button
+        ButtonWrapper={ButtonWrapper}
+        appearance='secondary'
+        isLoading
+        onClick={action('clicked')}
+      >
         Secondary
       </Button>
-      <Button ButtonWrapper={ButtonWrapper} appearance='tertiary' isLoading>
+      <Button
+        ButtonWrapper={ButtonWrapper}
+        appearance='tertiary'
+        isLoading
+        onClick={action('clicked')}
+      >
         Tertiary
       </Button>
-      <Button ButtonWrapper={ButtonWrapper} appearance='outline' isLoading>
+      <Button
+        ButtonWrapper={ButtonWrapper}
+        appearance='outline'
+        isLoading
+        onClick={action('clicked')}
+      >
         Outline
       </Button>
       <Button
@@ -123,20 +199,41 @@ export const buttonWrapper = {
         appearance='outline'
         isLoading
         loadingText='Custom...'
+        onClick={action('clicked')}
       >
         Outline
       </Button>
       <br />
-      <Button ButtonWrapper={ButtonWrapper} appearance='primary' size='small'>
+      <Button
+        ButtonWrapper={ButtonWrapper}
+        appearance='primary'
+        size='small'
+        onClick={action('clicked')}
+      >
         Primary
       </Button>
-      <Button ButtonWrapper={ButtonWrapper} appearance='secondary' size='small'>
+      <Button
+        ButtonWrapper={ButtonWrapper}
+        appearance='secondary'
+        size='small'
+        onClick={action('clicked')}
+      >
         Secondary
       </Button>
-      <Button ButtonWrapper={ButtonWrapper} appearance='tertiary' size='small'>
+      <Button
+        ButtonWrapper={ButtonWrapper}
+        appearance='tertiary'
+        size='small'
+        onClick={action('clicked')}
+      >
         Tertiary
       </Button>
-      <Button ButtonWrapper={ButtonWrapper} appearance='outline' size='small'>
+      <Button
+        ButtonWrapper={ButtonWrapper}
+        appearance='outline'
+        size='small'
+        onClick={action('clicked')}
+      >
         Outline
       </Button>
       <Button
@@ -144,6 +241,7 @@ export const buttonWrapper = {
         appearance='primary'
         isDisabled
         size='small'
+        onClick={action('clicked')}
       >
         Disabled
       </Button>
@@ -152,10 +250,16 @@ export const buttonWrapper = {
         appearance='outline'
         size='small'
         containsIcon
+        onClick={action('clicked')}
       >
         <Icon icon='link' aria-label='Link' />
       </Button>
-      <Button ButtonWrapper={ButtonWrapper} appearance='outline' size='small'>
+      <Button
+        ButtonWrapper={ButtonWrapper}
+        appearance='outline'
+        size='small'
+        onClick={action('clicked')}
+      >
         <Icon icon='link' />
         Link
       </Button>
@@ -326,4 +430,3 @@ export const AnchorWrapper = {
     </div>
   ),
 };
-
